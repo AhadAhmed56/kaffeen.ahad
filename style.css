@@ -1880,13 +1880,15 @@ form .inputBox .input .icons-form i {
     .food-container .food-content .discription {
         text-align: justify;
     }
-
+    
+    .coffen-container{
+    padding-right: 2rem;
+}
     .coffen-container .menu-container .menu-item {
         width: 81%;
         align-items: center;
         position: relative;
     }
-
     .coffen-container .menu-container .menu-item img {
         width: 10rem;
         height: 13rem;
