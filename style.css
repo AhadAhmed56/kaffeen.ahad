@@ -2012,6 +2012,15 @@ form .inputBox .input .icons i {
     font-size: 1.5rem;
 }
 
+form {
+    border-radius: .5rem;
+    background: var(--header-navigation-top-color);
+    padding: 0 6rem;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    height: 75vh;
+}
+
 form .inputBox .input .icons-form i {
     position: absolute;
     top: 3rem;
