@@ -1849,8 +1849,9 @@ form .inputBox .input .icons-form i {
 
 
     .food-section {
-        padding: -5rem 2rem;
-        margin-top: 9rem;
+        /* padding: -5rem 2rem; */
+        /* margin-top: 9rem; */
+        padding-top: 4rem;
     }
 
     .food-section .food-container {
