@@ -1881,6 +1881,13 @@ form .inputBox .input .icons-form i {
         text-align: justify;
     }
     
+.coffe-menu .container .navbar-coffe .nav-list .nav-item a {
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
     .coffen-container{
     padding-right: 2rem;
 }
