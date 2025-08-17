@@ -2007,9 +2007,9 @@ form .inputBox .input .icons-form i {
 form .inputBox .input .icons i {
     position: absolute;
     top: 3rem;
-    right: 37rem;
+    right: 21rem;
     color: var(--paragraph-color);
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 form {
@@ -2024,9 +2024,9 @@ form {
 form .inputBox .input .icons-form i {
     position: absolute;
     top: 3rem;
-    left: 65rem;
+    left: 60rem;
     color: var(--paragraph-color);
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 }
@@ -2149,14 +2149,14 @@ form .inputBox .input .icons i {
     top: 3rem;
     right: 22rem;
     color: var(--paragraph-color);
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 form .inputBox .input .icons-form i {
     position: absolute;
     top: 3rem;
-    left: 42rem;
+    left: 38rem;
     color: var(--paragraph-color);
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 }
