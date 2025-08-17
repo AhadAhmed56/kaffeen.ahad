@@ -2147,7 +2147,7 @@ form .inputBox .input .icons-form i {
 form .inputBox .input .icons i {
     position: absolute;
     top: 3rem;
-    right: 27rem;
+    right: 26rem;
     color: var(--paragraph-color);
     font-size: 1rem;
 }
@@ -2155,7 +2155,7 @@ form .inputBox .input .icons i {
 form .inputBox .input .icons-form i {
     position: absolute;
     top: 3rem;
-    left: 34rem;
+    left: 33rem;
     color: var(--paragraph-color);
     font-size: 1rem;
 }
