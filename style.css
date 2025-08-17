@@ -2117,9 +2117,19 @@ form .inputBox .input .icons-form i {
         margin: 0;
     }
     form {
-        padding: 2rem 2rem;
+        padding: 2rem 0rem;
         max-width: 100%;
     }
+
+    form .inputBox .input input {
+    margin: .9rem  -.4rem;
+    position: relative;
+    width: 100%;
+    border: 1px solid #ffffff24;
+    padding: 11px  .2rem;
+    border-radius: 5px;
+    background-color: var(--header-navigation-bottom-color);
+}
     
    form .inputBox .input  input{
     width: 110%;
