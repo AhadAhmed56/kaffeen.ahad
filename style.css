@@ -1818,7 +1818,7 @@ form .inputBox .input .icons-form i {
     }
 
     .home .home-slider .slide .content-banner h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-family: 'Merienda', 'sans-serif';
     }
 
@@ -1837,7 +1837,7 @@ form .inputBox .input .icons-form i {
     .btn-banner {
         display: flex;
         flex-direction: column;
-        width: 63%;
+        width: 74%;
     }
 
     #btn {
