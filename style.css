@@ -1615,19 +1615,24 @@ form .inputBox .btn {
         padding: 1rem 2rem;
     }
 
+
     .header-navigation {
         display: none;
     }
 
     .responsive-header {
         background-color: var(--header-navigation-bottom-color);
-        padding: 1rem 2.5rem;
+        padding-top: 3rem;
+        padding-left: 2.5rem;
     }
 
     .responsive-header i {
         color: var(--header-social-icons);
         font-size: 2.5rem;
+        padding-top: 2.3rem;
+        padding-right: 1.5rem;
         cursor: pointer;
+        background-color: var(--header-navigation-bottom-color);
     }
 
     .responsive-header i:hover {
@@ -1644,61 +1649,62 @@ form .inputBox .btn {
         z-index: 999;
     }
 
-    /* Form responsive fix */
-    .form-container {
+    .responsive-header.active .header-navigation .navigation {
+        background-color: var(--header-navigation-bottom-color);
+    }
+
+    #menu-bars {
+        display: block;
+        font-size: 2.5rem;
+        cursor: pointer;
+    }
+
+    #close {
+        display: block;
+        font-size: 2.5rem;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        cursor: pointer;
+    }
+
+     .form-container {
         flex-direction: column;
         gap: 2rem;
     }
-
     .image1 img,
     .image2 img {
+        /* width: 100%;
+        height: 30vh;
+        margin-bottom: 1rem; */
         display: none;
     }
-
     .margin1,
     .margin2 {
         margin: 0;
     }
-
     form {
-        padding: 2rem;
-        width: 100%;
+        padding: 2rem 2rem;
         max-width: 100%;
-        height: auto;
     }
+    
 
-    form .inputBox {
-        flex-direction: column;
-    }
+form .inputBox .input .icons i {
+    position: absolute;
+    top: 3rem;
+    right: 37rem;
+    color: var(--paragraph-color);
+    font-size: 1.5rem;
+}
 
-    form .inputBox .input {
-        width: 100%;
-        padding-left: 2rem;
-        position: relative;
-    }
+form .inputBox .input .icons-form i {
+    position: absolute;
+    top: 3rem;
+    left: 65rem;
+    color: var(--paragraph-color);
+    font-size: 1.5rem;
+}
 
-    form .inputBox .input input {
-        width: 100%;
-    }
-
-    /* icons ko input ke andar hi left/right align karna */
-    form .inputBox .input .icons i {
-        position: absolute;
-        top: 50%;
-        left: 1rem;
-        transform: translateY(-50%);
-        color: var(--paragraph-color);
-        font-size: 1.5rem;
-    }
-
-    form .inputBox .input .icons-form i {
-        position: absolute;
-        top: 50%;
-        right: 1rem;
-        transform: translateY(-50%);
-        color: var(--paragraph-color);
-        font-size: 1.5rem;
-    }
 }
 
 @media (max-width: 768px) {
@@ -1706,44 +1712,421 @@ form .inputBox .btn {
         font-size: 55%;
     }
 
-    .form-container {
+    .icons-1 #menu-bars {
+        display: inline-block;
+    }
+
+    .header-top,
+    .header-bottom .container-header .navigation,
+    .header-bottom .container-header .socail-icons {
+        display: none;
+    }
+
+    .responsive-header {
+        visibility: visible;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        cursor: pointer;
+    }
+
+    .responsive-header.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .header-bottom #none {
+        display: none;
+    }
+
+    .responsive-header .header-navigation {
+        display: block;
+        background: var(--header-navigation-bottom-color);
+        padding: 2rem;
+    }
+
+    .responsive-header .navigation {
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: var(--header-navigation-top-color);
+    }
+
+    .responsive-header .navigation li {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .responsive-header .navigation li a {
+        color: #fff;
+        font-size: 2rem;
+        padding: 1rem;
+        display: block;
+    }
+
+    .responsive-header .dropdown {
+        position: relative;
+        background: var(--header-navigation-bottom-color);
+        padding-left: 2rem;
+    }
+
+    .responsive-header .dropdown li a {
+        padding: 1rem;
+        font-size: 1.6rem;
+    }
+
+    .responsive-header .socail-icons {
+        display: block;
+        margin-top: 2rem;
+    }
+
+    .responsive-header .socail-icons .socail {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .responsive-header #desktop:hover {
+        background-color: var(--header-navigation-bottom-color);
+    }
+
+    .header-bottom {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+
+    .home .home-slider {
+        height: 100vh;
+    }
+
+    .home .home-slider .slide {
+        position: relative;
+        height: 120vh;
+    }
+
+
+    .home .home-slider .slide .banner-content .image {
+        width: 100%;
+        height: auto;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+    .home .home-slider .slide .content-banner {
+        top: 37%;
+        left: 5%;
+        width: 50%;
+
+    }
+
+    .home .home-slider .slide .content-banner h1 {
+        font-size: 4rem;
+        font-family: 'Merienda', 'sans-serif';
+    }
+
+    .home .home-slider .slide .content-banner h4 {
+        font-size: 1.5rem;
+        width: 70%;
+
+    }
+
+    .home .home-slider .slide .content-banner h4 span {
+        color: var(--buttom-color);
+        font-weight: bolder;
+
+    }
+
+    .btn-banner {
+        display: flex;
+        flex-direction: column;
+        width: 63%;
+    }
+
+    #btn {
+        font-size: 1.5rem;
+        padding: 0.8rem 2rem;
+        margin-left: 0;
+    }
+
+
+    .food-section {
+        padding: -5rem 2rem;
+        margin-top: 9rem;
+    }
+
+    .food-section .food-container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .food-section .food-container .food-image {
+        width: 100%;
+        margin-top: 6rem;
+    }
+
+
+    .food-container .food-content {
+        padding-left: 0;
+        padding-top: 2rem;
+
+    }
+
+
+    .food-container .food-content .tag {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .food-container .food-content .discription {
+        text-align: justify;
+    }
+
+    .coffen-container .menu-container .menu-item {
+        width: 81%;
+        align-items: center;
+        position: relative;
+    }
+
+    .coffen-container .menu-container .menu-item img {
+        width: 10rem;
+        height: 13rem;
+        margin-bottom: 1rem;
+    }
+
+    .coffen-container .menu-container .menu-item .menu-content {
+        margin-left: 1rem;
+        width: 70%;
+        position: absolute;
+        top: 0rem;
+        left: 12.5rem;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .coffen-container .menu-container .menu-item .menu-content h3,
+    .coffen-container .menu-container .menu-item .menu-content h6 {
+        position: static;
+        margin-bottom: 0.5rem;
+    }
+
+    .coffe-menu .container h1 {
+        font-size: 2.8rem;
+    }
+
+    .coffe-menu .container h2 {
+        font-size: 2.2rem;
+    }
+
+
+    .chefs .container .team {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        flex-direction: column;
+    }
+
+
+    .chefs .container .team .team-contact {
+        background-color: var(--header-navigation-top-color);
+        margin-left: 2rem;
+        height: 48rem;
+        width: 35rem;
+        margin-bottom: 2rem;
+    }
+
+    .chefs .container h1 {
+        font-size: 2.5rem;
+        font-weight: bolder;
+        padding-top: 2rem;
+        font-family: 'Merienda';
+    }
+
+
+    .chefs .container .team .team-contact .image-team .team-member {
+        position: absolute;
+        left: 0em;
+        top: 2rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 100%;
+        height: 93.4%;
+        border-radius: .8rem;
+        opacity: 0;
+    }
+
+
+    .chefs .container .team-box h4 {
+        color: #fff;
+        font-size: 2.5rem;
+        font-weight: bolder;
+        font-family: "oswald", sans-serif;
+        padding-bottom: 1rem;
+    }
+
+    .chefs .container .team-member .team-box .para {
+        color: #fff;
+        font-size: 2rem;
+        margin-top: 1rem;
+        font-weight: bolder;
+    }
+     .form-container {
         flex-direction: column;
         gap: 2rem;
     }
-
+    .image1 img,
+    .image2 img {
+        /* width: 100%;
+        height: 30vh;
+        margin-bottom: 1rem; */
+        display: none;
+    }
+    .margin1,
+    .margin2 {
+        margin: 0;
+    }
     form {
-        padding: 1.5rem;
-        width: 100%;
+        padding: 2rem 2rem;
+        max-width: 100%;
     }
+    
 
-    form p {
-        font-size: 2.5rem;
-    }
+form .inputBox .input .icons i {
+    position: absolute;
+    top: 3rem;
+    right: 37rem;
+    color: var(--paragraph-color);
+    font-size: 1.5rem;
 }
 
+form .inputBox .input .icons-form i {
+    position: absolute;
+    top: 3rem;
+    left: 65rem;
+    color: var(--paragraph-color);
+    font-size: 1.5rem;
+}
+
+}
+
+
+
 @media (max-width: 600px) {
+    .form-section .container {
+        padding: 1rem;
+    }
     form {
         padding: 1rem;
         font-size: 1.3rem;
     }
-
     form p {
         font-size: 2rem;
     }
+    .image1 img,
+    .image2 img {
+       display: none;
+    }
+
+     .form-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .image1 img,
+    .image2 img {
+        /* width: 100%;
+        height: 30vh;
+        margin-bottom: 1rem; */
+        display: none;
+    }
+    .margin1,
+    .margin2 {
+        margin: 0;
+    }
+    form {
+        padding: 2rem 2rem;
+        max-width: 100%;
+    }
+    
+
+form .inputBox .input .icons i {
+    position: absolute;
+    top: 3rem;
+    right: 33rem;
+    color: var(--paragraph-color);
+    font-size: 1.5rem;
+}
+
+form .inputBox .input .icons-form i {
+    position: absolute;
+    top: 3rem;
+    left: 55rem;
+    color: var(--paragraph-color);
+    font-size: 1.5rem;
+}
 }
 
 @media (max-width: 480px) {
-    form {
-        padding: 1rem;
-        font-size: 1.2rem;
+
+
+    .btn {
+        font-size: 1.3rem;
     }
 
-    form .inputBox .input input {
-        font-size: 1.4rem;
-    }
-
-    .btn,
     #btn {
         font-size: 1.3rem;
     }
+
+    .coffe-menu .container h1 {
+        font-size: 2.2rem;
+    }
+
+    .coffe-menu .container h2 {
+        font-size: 1.8rem;
+    }
+
+    .coffe-menu .container .navbar-coffe .nav-list .nav-item a {
+        font-size: 1.4rem;
+    }
+
+     .form-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .image1 img,
+    .image2 img {
+        /* width: 100%;
+        height: 30vh;
+        margin-bottom: 1rem; */
+        display: none;
+    }
+    .margin1,
+    .margin2 {
+        margin: 0;
+    }
+    form {
+        padding: 2rem 2rem;
+        max-width: 100%;
+    }
+    
+   form .inputBox .input  input{
+    width: 110%;
+   }
+
+form .inputBox .input .icons i {
+    position: absolute;
+    top: 3rem;
+    right: 22rem;
+    color: var(--paragraph-color);
+    font-size: 1.5rem;
+}
+
+form .inputBox .input .icons-form i {
+    position: absolute;
+    top: 3rem;
+    left: 42rem;
+    color: var(--paragraph-color);
+    font-size: 1.5rem;
+}
 }
