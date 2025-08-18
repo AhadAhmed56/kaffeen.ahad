@@ -143,22 +143,26 @@ h3 {
 }
 
 .logo img {
-    max-height: 5rem;
+    max-height: 4rem;
     max-width: 100%;
     transition: transform 0.3s ease;
     width: auto;
     height: auto;
+    padding-top: .3rem;
+    height: auto;
 }
+
 
 .header-bottom .container-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100%;
+    height: 109%;
     padding: 1.5rem;
     flex-wrap: wrap;
     overflow: visible;
 }
+
 
 .navigation {
     display: flex;
@@ -257,6 +261,8 @@ h3 {
 
 .icons-1 #menu-bars {
     display: none;
+    font-size: 2rem;
+    padding-top: 1.5rem;
 }
 
 .header-bottom .socail-icons,
@@ -330,11 +336,15 @@ h3 {
 }
 
 #btn:hover {
-    background-color: var(--paragraph-color);
+    background-color: var(--buttom-color);
     color: black;
     border: 1px solid var(--header-navigation-bottom-color);
     transform: translateY(-3px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+#btn i {
+    color: #fff;
 }
 
 
@@ -1714,7 +1724,6 @@ form .inputBox .btn {
 
     .services-section .services-container {
         flex-direction: column;
-        text-align: center;
     }
 
     .services-section .services-container .services-image {
@@ -1724,13 +1733,14 @@ form .inputBox .btn {
     }
 
     .services-section .services-container .services-image .image-services {
-        width: 36vh;
+        width: 38vh;
         height: 38vh;
     }
 
     .services-container .services-content {
         padding-left: 0;
         margin-top: 4rem;
+        padding-bottom: 5rem;
     }
 
     .services-container .services-content h2 {
@@ -1913,17 +1923,45 @@ form .inputBox .btn {
         margin-bottom: 1rem;
     }
 
+    
+.gsap-btn {
+    position: relative;
+    display: inline-block;
+    padding: 1rem 4rem;
+    font-size: 1.8rem;
+    background-color: #b99272;
+    color: #fff;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    overflow: hidden;
+    border: none;
+    outline: none;
+}
+
     .food-container .food-content .discription {
         text-align: justify;
     }
 
     .coffe-menu .container .navbar-coffe .nav-list .nav-item a {
         color: #fff;
-        font-size: 1rem;
+        font-size: 1.5rem;
         padding: 0.5rem 1rem;
         border-radius: 0.5rem;
         transition: background-color 0.3s ease, color 0.3s ease;
     }
+
+
+.coffe-menu .container .coffen-container .menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+}
 
     .coffen-container {
         padding-right: 2rem;
@@ -1936,14 +1974,14 @@ form .inputBox .btn {
     }
 
     .coffen-container .menu-container .menu-item img {
-        width: 10rem;
+        width: 13rem;
         height: 13rem;
         margin-bottom: 1rem;
     }
 
     .coffen-container .menu-container .menu-item .menu-content {
-        margin-left: 1rem;
-        width: 70%;
+        margin-left: 4rem;
+        width: 66%;
         position: absolute;
         top: 0rem;
         left: 12.5rem;
@@ -2126,25 +2164,25 @@ form .inputBox .btn {
 
     }
 
-.content-services {
-    position: absolute;
-    top: 75%;
-    left: 20%;
-}
+    .content-services {
+        position: absolute;
+        top: 75%;
+        left: 20%;
+    }
 
-.content-services h3 {
-    color: #fff;
-    font-size: 1.5rem;
-}
+    .content-services h3 {
+        color: #fff;
+        font-size: 1.5rem;
+    }
 
-.content-services p {
-    color: var(--paragraph-color);
-    font-size: 1.4rem;
-    margin-top: .5rem;
-    font-weight: bolder;
-}
+    .content-services p {
+        color: var(--paragraph-color);
+        font-size: 1.4rem;
+        margin-top: .5rem;
+        font-weight: bolder;
+    }
 
- .services-section .services-container .services-image .image-services {
+    .services-section .services-container .services-image .image-services {
         width: 36vh;
         height: 40vh;
     }
@@ -2154,8 +2192,25 @@ form .inputBox .btn {
 
 
 @media (max-width: 600px) {
-    .form-section .container {
-        padding: 1rem;
+
+    .home .home-slider .slide .content-banner h4 {
+        font-size: 1.5rem;
+        width: 74%;
+    }
+
+    
+
+    .food-section {
+        margin-top: 9rem;
+        padding-top: 14rem;
+    }
+
+    .coffe-menu .container .navbar-coffe .nav-list .nav-item a {
+        color: #fff;
+        font-size: 1.5rem;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        transition: background-color 0.3s ease, color 0.3s ease;
     }
 
     form {
@@ -2163,8 +2218,21 @@ form .inputBox .btn {
         font-size: 1.3rem;
     }
 
+    form .inputBox {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        gap: 1rem;
+    }
+
+    form .inputBox .input {
+        width: 48%;
+        padding-left: 0.5rem;
+    }
+
     form p {
-        font-size: 2rem;
+        font-size: 3rem;
+        font-family: 'oswald';
     }
 
     .image1 img,
@@ -2199,17 +2267,122 @@ form .inputBox .btn {
     form .inputBox .input .icons i {
         position: absolute;
         top: 3rem;
-        right: 33rem;
-        color: var(--paragraph-color);
+        right: 28rem;
+        color: #fff;
         font-size: 1.5rem;
     }
 
     form .inputBox .input .icons-form i {
         position: absolute;
         top: 3rem;
-        left: 55rem;
-        color: var(--paragraph-color);
+        left: 48rem;
+        color: #fff;
         font-size: 1.5rem;
+    }
+
+    form .inputBox .input input {
+        margin: 4px 4px;
+        position: relative;
+        width: 100%;
+        border: 1px solid #ffffff24;
+        padding: 14px 7px;
+        border-radius: 5px;
+        background-color: var(--header-navigation-bottom-color);
+        color: #fff;
+    }
+
+    .btn {
+        margin-top: 1rem;
+        display: inline-block;
+        font-size: 1.7rem;
+        background: var(--buttom-color);
+        border-radius: .5rem;
+        color: #fff;
+        cursor: pointer;
+        padding: 0.8rem 3rem;
+        transition: all .3s ease;
+        text-align: center;
+        line-height: 2.5rem;
+        height: 4rem;
+    }
+
+    .services-section {
+        /* padding: -5rem 2rem; */
+        margin-top: -3rem;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+
+    .services-section .food-container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .services-section .services-container .services-image {
+        width: 100%;
+        margin-top: 6rem;
+    }
+
+
+    .services-container .services-content {
+        padding-left: 0;
+        padding-top: 2rem;
+
+    }
+
+
+    .services-container .services-content .tag {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .services-container .services-content .discription {
+        text-align: justify;
+    }
+
+
+
+    .services-section .services-container .services-image .image-services .bg-service {
+        background-color: var(--header-navigation-bottom-color);
+        border-radius: 50%;
+        position: absolute;
+        top: 14%;
+        left: 25%;
+        height: 13rem;
+        width: 13rem;
+    }
+
+    .services-section .services-container .services-image .image-services img {
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        height: 8rem;
+        width: 8rem;
+
+    }
+
+    .content-services {
+        position: absolute;
+        top: 71%;
+        left: 26%;
+    }
+
+    .content-services h3 {
+        color: #fff;
+        font-size: 1.5rem;
+        padding-left: 2rem;
+    }
+
+    .content-services p {
+        color: var(--paragraph-color);
+        font-size: 1.2rem;
+        margin-top: .5rem;
+        font-weight: bolder;
+    }
+
+    .services-section .services-container .services-image .image-services {
+        width: 34vh;
+        height: 37vh;
     }
 
 
@@ -2290,4 +2463,105 @@ form .inputBox .btn {
         color: var(--paragraph-color);
         font-size: 1rem;
     }
+
+    .services-section {
+        margin-top: -3rem;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+
+    .services-section .food-container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .services-section .services-container .services-image {
+        width: 100%;
+        margin-top: 6rem;
+    }
+
+
+    .services-container .services-content {
+        padding-left: 0;
+        padding-top: 2rem;
+
+    }
+
+
+    .services-container .services-content .tag {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .services-container .services-content .discription {
+        text-align: justify;
+    }
+
+
+
+    .services-section .services-container .services-image .image-services .bg-service {
+        background-color: var(--header-navigation-bottom-color);
+        border-radius: 50%;
+        position: absolute;
+        top: 12%;
+        left: 20%;
+        height: 10rem;
+        width: 10rem;
+    }
+
+    .services-section .services-container .services-image .image-services img {
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        height: 6rem;
+        width: 6rem;
+
+    }
+
+    .content-services {
+        position: absolute;
+        top: 64%;
+        left: 10%;
+    }
+
+    .content-services h3 {
+        color: #fff;
+        font-size: 1.5rem;
+    }
+
+    .content-services p {
+        color: var(--paragraph-color);
+        font-size: 1.4rem;
+        margin-top: .5rem;
+        font-weight: bolder;
+    }
+
+    .services-section .services-container .services-image .image-services {
+        width: 24vh;
+        height: 31vh;
+    }
+
+
+    .services-content .img-container .s-image img {
+        height: 6rem;
+        width: 6rem;
+        margin-right: 3rem;
+    }
+
+    .services-content .img-container .servivcesimage-content h4 {
+        font-size: 2rem;
+        font-weight: bolder;
+        color: #fff;
+        font-family: 'Oswald';
+        margin-bottom: 1rem;
+    }
+
+
+    .services-content .img-container .servivcesimage-content p {
+        color: var(--paragraph-color);
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+
 }
