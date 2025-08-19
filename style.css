@@ -2523,17 +2523,17 @@ form .inputBox .btn {
         border-radius: 50%;
         position: absolute;
         top: 12%;
-        left: 20%;
-        height: 10rem;
-        width: 10rem;
+        left: 25%;
+        height: 8rem;
+        width: 8rem;
     }
 
     .services-section .services-container .services-image .image-services img {
         position: absolute;
-        top: 20%;
-        left: 20%;
-        height: 6rem;
-        width: 6rem;
+        top: 17%;
+        left: 21%;
+        height: 5rem;
+        width: 5rem;
 
     }
 
@@ -2545,19 +2545,19 @@ form .inputBox .btn {
 
     .content-services h3 {
         color: #fff;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .content-services p {
         color: var(--paragraph-color);
-        font-size: 1.4rem;
+        font-size: 1.1rem;
         margin-top: .5rem;
         font-weight: bolder;
     }
 
     .services-section .services-container .services-image .image-services {
-        width: 24vh;
-        height: 31vh;
+        width: 23vh;
+        height: 25vh;
     }
 
 
