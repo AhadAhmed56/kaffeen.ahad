@@ -2437,7 +2437,7 @@ form .inputBox .btn {
     form .inputBox .input input {
         margin: .9rem -.4rem;
         position: relative;
-        width: 100%;
+        width: 110%;
         border: 1px solid #ffffff24;
         padding: 11px .2rem;
         border-radius: 5px;
@@ -2451,15 +2451,20 @@ form .inputBox .btn {
     form .inputBox .input .icons i {
         position: absolute;
         top: 3rem;
-        right: 20rem;
+        right: 22rem;
         color: var(--paragraph-color);
         font-size: 1rem;
+    }
+
+    form .inputBox .input {
+        width: 48%;
+        padding: 0  1rem;
     }
 
     form .inputBox .input .icons-form i {
         position: absolute;
         top: 3rem;
-        left: 36rem;
+        left: 38rem;
         color: var(--paragraph-color);
         font-size: 1rem;
     }
@@ -2563,5 +2568,8 @@ form .inputBox .btn {
         margin-bottom: 1rem;
     }
 
+}
+
+@media(max-width:348px){
 
 }
