@@ -1271,73 +1271,70 @@ form .inputBox .btn {
 }
 
 /* section bg-video */
-
 .bg-video {
-    background-image: url(/image/video_bg.jpg);
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url('/image/video_bg.jpg') center/cover no-repeat;
     position: relative;
-    height: 60rem;
+    width: 100%;
+    height: 60rem; /* apni requirement ke hisaab se */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
-.bg-video .video-container {
-    position: fixed;
-    height: 100%;
-}
-
-.bg-video .play-button {
+.bg-video::before {
+    content: "";
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3rem;
-    color: #fff;
-    cursor: pointer;
-    border: .1rem solid #ffffff8a;
-    padding: 2rem 2rem;
-    border-radius: 50%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5); /* dark overlay */
+    z-index: 1;
 }
 
-
-.play-button.active {
-  display: none;
-}
-
-.bg-video .play-button i {
-    color: #b99272;
-    background-color: #fff;
-    padding: 5rem 5rem;
-    border-radius: 50%;
-    font-size: 5rem;
-    height: 14rem;
-    width: 13rem;
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    display: none; /* pehle video hidden hoga */
 }
 
 .video-container.active {
-  position: unset;
+    display: block;
 }
-/* .video-bg-1 {
-  position: relative;
-} */
-/* 
-.bg-video::before {
-  content: "";
-  background: #00000061;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.bg-video.active::before {
-  display: none;
-} */
 
 .video-container iframe {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#play-button {
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#play-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255,255,255,0.5);
+}
+
+#play-button i {
+    color: #b99272;
+    font-size: 4rem;
 }
 
 

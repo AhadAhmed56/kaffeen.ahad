@@ -65,33 +65,25 @@ var swiper = new Swiper(".client-container", {
 });
 
 // BG VIDEO //
-      var player;
+   var player;
 
-      
-      function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-          height: '315', 
-          width: '560',  
-          videoId: 'Gu6z6kIukgg', 
-          playerVars: {
-            'autoplay': 0, 
-            'controls': 1,
-            'rel': 0, 
-            'showinfo': 0 
-          }
-        });
-      }
-    
-      
-      function playVideo() {
-        if (player) {
-          player.playVideo();
-        }
-      }
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('player', {
+    videoId: 'Gu6z6kIukgg', // apna video id
+    playerVars: {
+      autoplay: 0,
+      controls: 1,
+      rel: 0,
+      modestbranding: 1
+    }
+  });
+}
 
+function playVideo() {
+  document.getElementById("play-button").style.display = "none";
+  document.querySelector(".video-container").classList.add("active");
+  if (player && player.playVideo) {
+    player.playVideo();
+  }
+}
 
-jQuery('.play-button').click(function(){
-jQuery(this).addClass('active');
-jQuery('.video-container').addClass('active');
-jQuery('.bg-video').addClass('active');
-}); 
