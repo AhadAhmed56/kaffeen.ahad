@@ -1443,10 +1443,85 @@ form .inputBox .btn {
     font-weight: bolder;
 }
 
+/* end-image-slider */
 
 
+.end-image-slider .container .container-end{
+    display: flex;
+    /* flex-wrap: wrap; */
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+
+.end-image-slider .container .container-end  .image{
+    height: 70vh;
+    position: relative;
+}
+.end-image-slider .container .container-end  .image img{
+    height: 70vh;
+    width: 60vh;
+    transition: all .3s;
+}
+
+.end-image-slider .container .container-end  .image img:hover{
+    transform: scale(1.1);
+}
 
 
+.end-image-slider .container .container-end  .image .image-icons .icons{
+    position: absolute;
+    top: 17rem;
+    left: 13rem;
+    height: 50vh;
+    width: 50vh;
+}
+
+.image-icons .icons a{
+    color: var(--header-social-icons);
+    font-size: 4rem;
+}
+
+
+.end-image-slider .container .container-end  .image .image-icons{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    background-color:  rgba(0,0,0,0.4);
+    opacity: 0;
+     transition: opacity 0.4s ease;
+    pointer-events: none;
+}
+.end-image-slider .container .container-end  .image:hover .image-icons{
+    opacity: 1;
+}
+/* brand-pics */
+
+.brand-pics{
+    padding: 6rem;
+    background-color: var(--header-navigation-bottom-color);
+}
+
+.brand-pics .container .container-pics{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.brand-pics .container .container-pics .pics{
+    height: auto;
+    padding:  0 3rem;
+
+}
+
+.pics img{
+    height: 20vh;
+    width: 25vh;
+    padding-left: 1rem;
+    object-fit: contain;
+    opacity: .5;
+}
 
 
 
@@ -2446,6 +2521,10 @@ form .inputBox .btn {
         font-size: 1.6rem;
     }
 
+    .brand-pics{
+        display: none;
+    }
+
 }
 
 
@@ -2644,7 +2723,18 @@ form .inputBox .btn {
         height: 37vh;
     }
 
+.end-image-slider .container .container-end  .image img{
+    height: 50vh;
+    width: 65vh;
+    transition: all .3s;
+}
 
+.end-image-slider .container .container-end  .image img:hover{
+    transform: scale(1.1);
+}
+       .brand-pics{
+        display: none;
+       }
 }
 
 @media (max-width: 450px) {
@@ -2851,4 +2941,17 @@ form .inputBox .btn {
         font-size: 1.6rem;
     }
 
+    
+.end-image-slider .container .container-end  .image img{
+    height: 50vh;
+    width: 65vh;
+    transition: all .3s;
+}
+
+.end-image-slider .container .container-end  .image img:hover{
+    transform: scale(1.1);
+}
+  .bbrand-pics{
+    display: none;
+  }
 }
