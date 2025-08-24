@@ -29,7 +29,7 @@ gsap.from('.home .content-banner h1', {
   y: 100,
   opacity: 0,
   duration: 1,
-  delay: 0.2,
+  delay: 0.1,
 });
 
 
