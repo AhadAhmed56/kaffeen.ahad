@@ -62,11 +62,11 @@ h3 {
     border-radius: .5rem;
     color: #fff;
     cursor: pointer;
-    padding: 0.8rem 3rem;
+    padding: 0.5rem 2rem;
     transition: all .3s ease;
     text-align: center;
     line-height: 3.5rem;
-    height: 5rem;
+    height: 4rem;
 }
 
 .btn:hover {
@@ -157,9 +157,9 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 109%;
+    height: 100%;
     padding: 1.5rem;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     overflow: visible;
 }
 
@@ -177,7 +177,7 @@ h3 {
 
 .navigation li {
     position: relative;
-    margin-right: 1.5rem;
+    margin-right: 1rem;
 }
 
 .navigation li a {
@@ -247,9 +247,9 @@ h3 {
 
 .icons-1 i,
 .icons-1 a {
-    color: var(--header-social-icons);
-    font-size: 2rem;
-    margin: 0 1rem;
+    color:  #fff;
+    font-size: 1.3rem;
+    /* margin: 0 1rem; */
     transition: color .3s ease;
     cursor: pointer;
 }
@@ -269,7 +269,6 @@ h3 {
 .header-bottom #desktop {
     display: none;
 }
-
 .responsive-header {
     visibility: hidden;
     position: fixed;
@@ -322,23 +321,25 @@ h3 {
 }
 
 #btn {
-    margin-left: 2rem;
+   margin-top: 1rem;
     display: inline-block;
     font-size: 1.7rem;
-    background: var(--header-navigation-bottom-color);
+    background: var(--buttom-color);
     border-radius: .5rem;
     color: #fff;
     cursor: pointer;
-    padding: 1rem 3rem;
-    height: auto;
-    transition: all 0.3s ease;
+    padding: 0.5rem 2rem;
+    transition: all .3s ease;
     text-align: center;
+    line-height: 3.5rem;
+    height: 4rem;
+    margin-left: 2rem;
 }
 
 #btn:hover {
-    background-color: var(--buttom-color);
-    color: black;
-    border: 1px solid var(--header-navigation-bottom-color);
+    background-color: var(--header-navigation-bottom-color);
+    color:  var(--paragraph-color);
+    border: 1px solid var(--buttom-color);
     transform: translateY(-3px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
@@ -2118,8 +2119,8 @@ z .services-content .img-container .servivcesimage-content p {
     }
 
 
-    .header-navigation {
-        display: none;
+  .header-bottom  .header-navigation {
+       margin-left: 1rem;
     }
 
     .responsive-header {
@@ -2175,7 +2176,7 @@ z .services-content .img-container .servivcesimage-content p {
 
     .home .home-slider .slide img {
         width: 100%;
-        height: 68vh;
+        height: 95vh;
         object-fit: cover;
     }
 
@@ -2200,7 +2201,8 @@ z .services-content .img-container .servivcesimage-content p {
     }
 
     .food-section {
-        padding: 16em 3rem;
+        padding: 16rem 3rem;
+        margin-top: -6rem;
         background: url(/image/category_bg.jpg);
     }
 
@@ -2208,7 +2210,7 @@ z .services-content .img-container .servivcesimage-content p {
         position: relative;
         display: inline-block;
         padding: 1rem 3rem;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         background-color: #b99272;
         color: #fff;
         border-radius: 0.5rem;
@@ -2279,7 +2281,7 @@ z .services-content .img-container .servivcesimage-content p {
     form .inputBox .input .icons i {
         position: absolute;
         top: 3rem;
-        right: 45rem;
+        right: 43rem;
         color: var(--paragraph-color);
         font-size: 1.5rem;
     }
@@ -2287,7 +2289,7 @@ z .services-content .img-container .servivcesimage-content p {
     form .inputBox .input .icons-form i {
         position: absolute;
         top: 3rem;
-        left: 77rem;
+        left: 76rem;
         color: var(--paragraph-color);
         font-size: 1.5rem;
     }
@@ -2308,8 +2310,8 @@ z .services-content .img-container .servivcesimage-content p {
     }
 
     .services-section .services-container .services-image .image-services {
-        width: 45vh;
-        height: 50vh;
+        width: 53vh;
+        height: 58vh;
     }
 
     .services-section .services-container .services-image .image-services .bg-service {
@@ -2322,6 +2324,12 @@ z .services-content .img-container .servivcesimage-content p {
         width: 13rem;
     }
 
+    .services-section .services-container .services-image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding-top:3rem;
+}
     .content-services {
         position: absolute;
         top: 61%;
