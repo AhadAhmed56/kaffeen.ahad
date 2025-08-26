@@ -3170,7 +3170,7 @@ z .services-content .img-container .servivcesimage-content p {
 
  .home .home-slider .slide .content-banner h4 {
         font-size: 1.5rem;
-        width: 100%;
+        width: 100vh;
     }
 
     .home .home-slider .slide .content-banner h1 {
@@ -3183,7 +3183,7 @@ z .services-content .img-container .servivcesimage-content p {
         display: flex;
         width: 51vh;
         margin-top: -1rem;
-        gap: 2rem;
+        gap: 1rem;
     }
 
     .responsive-header .container-header .btn {
