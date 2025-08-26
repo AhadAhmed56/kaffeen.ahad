@@ -3217,7 +3217,7 @@ z .services-content .img-container .servivcesimage-content p {
         font-size: 1.8rem;
         padding: 1.8rem 2rem;
         border-radius: 1rem;
-        width: 50vh;
+        width: 30vh;
         height: 6vh;
     }
 
@@ -3230,7 +3230,7 @@ z .services-content .img-container .servivcesimage-content p {
         padding: 1.8rem 2rem;
         margin-left: 0;
         border-radius: 1rem;
-        width: 50vh;
+        width: 30vh;
         height: 6vh;
         background-color: var(--header-navigation-bottom-color);
     }
