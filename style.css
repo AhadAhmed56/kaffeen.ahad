@@ -3215,7 +3215,7 @@ z .services-content .img-container .servivcesimage-content p {
         text-align: center;
         line-height: 3.9rem;
         font-size: 1.8rem;
-        padding: .8rem 2rem;
+        padding: 1.8rem 2rem;
         border-radius: 1rem;
         width: 20vh;
         height: 6vh;
@@ -3226,8 +3226,8 @@ z .services-content .img-container .servivcesimage-content p {
         transition: all .3s ease;
         text-align: center;
         line-height: 3.9rem;
-        font-size: 1.5rem;
-        padding: .8rem 2rem;
+        font-size: 1.8rem;
+        padding: 1.8rem 2rem;
         margin-left: 0;
         border-radius: 1rem;
         width: 23vh;
@@ -3256,75 +3256,7 @@ z .services-content .img-container .servivcesimage-content p {
     }
 
 
-    /* .btn {
-        font-size: 1.3rem;
-    }
-
-    #btn {
-        font-size: 1.3rem;
-    } */
-
-    /* .btn-banner {
-        display: flex;
-        width: 51vh;
-        margin-top: -1rem;
-        gap: 2rem;
-    }
-
-    .responsive-header .container-header .btn {
-        margin-top: 1rem;
-        display: inline-block;
-        background: var(--buttom-color);
-        border-radius: .5rem;
-        color: #fff;
-        cursor: pointer;
-        transition: all .3s ease;
-        text-align: center;
-        line-height: 3.9rem;
-        font-size: 1.5rem;
-        padding: 0.8rem 2rem;
-        border-radius: 1rem;
-        width: 57vh;
-        height: 8vh;
-    }
-
-    .btn {
-        margin-top: 1rem;
-        display: inline-block;
-        background: var(--buttom-color);
-        border-radius: .5rem;
-        color: #fff;
-        cursor: pointer;
-        transition: all .3s ease;
-        text-align: center;
-        line-height: 3.9rem;
-        font-size: 1.5rem;
-        padding: 0.8rem 2rem;
-        border-radius: 1rem;
-        width: 127vh;
-        height: 8vh;
-    }
-
-    #btn {
-        display: inline-block;
-        transition: all .3s ease;
-        text-align: center;
-        line-height: 3.9rem;
-        font-size: 1.5rem;
-        padding: 0.8rem 2rem;
-        margin-left: 0;
-        border-radius: 1rem;
-        width: 127vh;
-        height: 8vh;
-        background-color: var(--header-navigation-bottom-color);
-    }
-
-    #btn:hover {
-        color: #fff;
-        background-color: var(--buttom-color);
-    }
- */
-
+   
     .coffe-menu .container h1 {
         font-size: 2.2rem;
     }
