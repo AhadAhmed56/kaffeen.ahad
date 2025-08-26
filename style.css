@@ -3264,7 +3264,7 @@ z .services-content .img-container .servivcesimage-content p {
         font-size: 1.3rem;
     } */
 
-    .btn-banner {
+    /* .btn-banner {
         display: flex;
         width: 51vh;
         margin-top: -1rem;
@@ -3323,7 +3323,7 @@ z .services-content .img-container .servivcesimage-content p {
         color: #fff;
         background-color: var(--buttom-color);
     }
-
+ */
 
     .coffe-menu .container h1 {
         font-size: 2.2rem;
