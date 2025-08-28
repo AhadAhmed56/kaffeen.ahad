@@ -1591,7 +1591,7 @@ z .services-content .img-container .servivcesimage-content p {
 
 .for-1 .container-for-1 .fo-socail-icons ul li a {
     color: #fff;
-    background: #ffffff24;
+    background: var(--header-navigation-bottom-color);
     padding: 1.2rem 1.4rem;
     border-radius: 50%;
     display: inline-flex;
