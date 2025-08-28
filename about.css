@@ -953,7 +953,7 @@ h3 {
     }
 
     .image-content-1 .content p {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         color: var(--paragraph-color);
         width: 93%;
         line-height: 1.5;
@@ -973,8 +973,8 @@ h3 {
     }
 
     .about-keffen .container .row-1-2 .row-2 .image img {
-        width: 63vh;
-        height: 110vh;
+        width: 57vh;
+        height:  77vh;
         padding-bottom: 3rem;
         object-fit: cover;
         border-radius: .3rem;
@@ -993,7 +993,7 @@ h3 {
     }
 
     .image-content-2 .content p {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         color: var(--paragraph-color);
         width: 93%;
         line-height: 1.5;
