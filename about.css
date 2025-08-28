@@ -850,11 +850,54 @@ h3 {
     }
 
     .about-keffen .container .row-1-2 .row-2 {
-    margin-top: 3rem;
-}
+        margin-top: 3rem;
+    }
+
     .about-keffen .container .row-1-2 .row-2 .image img {
         width: 125vh;
         height: 130vh;
+        padding-bottom: 3rem;
+        object-fit: cover;
+        border-radius: .3rem;
+    }
+}
+
+@media (max-width:600px) {
+    .about-section {
+        height: 75vh;
+    }
+
+
+    .about-section .content {
+        position: absolute;
+        top: 50%;
+        left: -16rem;
+        width: 100vh;
+    }
+
+    .about-section .content h1 {
+        font-size: 5rem;
+        color: #fff;
+        margin-bottom: 1rem;
+        font-weight: bold;
+    }
+
+    .about-section .content h5 {
+        font-size: 1.4rem;
+        color: #fff;
+        display: flex;
+        position: absolute;
+        top: 100%;
+        left: 42%;
+        width: 100vh;
+    }
+
+    .about-keffen .container .row-1-2 .row-2 {
+    margin-top: 3rem;
+}
+    .about-keffen .container .row-1-2 .row-2 .image img {
+        width: 96vh;
+        height: 110vh;
         padding-bottom: 3rem;
         object-fit: cover;
         border-radius: .3rem;
@@ -891,48 +934,79 @@ h3 {
         width: 100vh;
     }
 
-}
 
 
-
-@media (max-width:600px) {
-    .about-section {
-        height: 75vh;
+    .about-keffen .container .row-1-2 .row-1 .image-content-1 {
+        margin-top: 1rem;
     }
 
-
-    .about-section .content {
-        position: absolute;
-        top: 50%;
-        left: -16rem;
-        width: 100vh;
-    }
-
-    .about-section .content h1 {
-        font-size: 5rem;
+    .about-keffen .container .row-1-2 .row-1 .main-content h1 {
+        font-size: 2.5rem;
         color: #fff;
-        margin-bottom: 1rem;
-        font-weight: bold;
+        font-family: 'Oswald';
+        padding-bottom: 2rem;
     }
 
-    .about-section .content h5 {
-        font-size: 1.4rem;
+    .image-content-1 .content h3 {
+        font-size: 2rem;
         color: #fff;
-        display: flex;
-        position: absolute;
-        top: 100%;
-        left: 42%;
-        width: 100vh;
     }
-    
+
+    .image-content-1 .content p {
+        font-size: 1.5rem;
+        color: var(--paragraph-color);
+        width: 93%;
+        line-height: 1.5;
+        padding-top: 1rem;
+    }
+
+    .image-content-1 .image img {
+        width: 9rem;
+        height: 9rem;
+        object-fit: contain;
+        padding-top: 2rem;
+        margin-right: 1rem;
+    }
+
     .about-keffen .container .row-1-2 .row-2 {
-    margin-top: 3rem;
-}
+        margin-top: 3rem;
+    }
+
     .about-keffen .container .row-1-2 .row-2 .image img {
-        width: 74vh;
+        width: 63vh;
         height: 110vh;
         padding-bottom: 3rem;
         object-fit: cover;
         border-radius: .3rem;
     }
+
+
+
+    .about-keffen .container .row-1-2 .row-1 .image-content-2 {
+        margin-top: 1rem;
+    }
+
+
+    .image-content-2 .content h3 {
+        font-size: 2rem;
+        color: #fff;
+    }
+
+    .image-content-2 .content p {
+        font-size: 1.5rem;
+        color: var(--paragraph-color);
+        width: 93%;
+        line-height: 1.5;
+        padding-top: 1rem;
+    }
+
+    .image-content-2 .image img {
+        width: 9rem;
+        height: 9rem;
+        object-fit: contain;
+        padding-top: 2rem;
+        margin-right: 1rem;
+    }
+
+
 }
