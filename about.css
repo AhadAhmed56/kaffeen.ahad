@@ -498,7 +498,129 @@ h3 {
 }
 
 
+/* section bg-video */
+.bg-video {
+    background: url('/image/video_bg.jpg') center/cover no-repeat;
+    position: relative;
+    width: 100%;
+    height: 60rem;
+    /* apni requirement ke hisaab se */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
 
+.bg-video::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    display: none;
+}
+
+.video-container.active {
+    display: block;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#play-button {
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#play-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+#play-button i {
+    color: #b99272;
+    font-size: 4rem;
+}
+
+/* birthday-cards */
+
+.birthday-cards{
+    padding:  8rem 6rem;
+}
+
+
+
+.birthday-cards .container .contianer-birthday{
+    background-color: var(--header-navigation-top-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 45vh;
+    width: 100%;
+    position: relative;
+    padding: 7rem 0;
+}
+
+
+.birthday-cards .container .contianer-birthday .image-content{
+    width: 38vh;
+    height: auto;
+    margin-left: 6rem;
+}
+.birthday-cards .container .contianer-birthday .image-content .image{
+    height: 22vh;
+    width: 21vh;
+    border-radius: 50%;
+    background-color: var(--header-navigation-bottom-color);
+    margin-left: 2rem;
+    margin-top: -3.7rem;
+}
+
+.birthday-cards .container .contianer-birthday .image-content .image img{
+    height: 8rem;
+    width: 8rem;
+    object-fit: contain;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+
+.birthday-cards .container .contianer-birthday .image-content .content h3{
+    color: #fff;
+    margin-right: 2rem;
+    font-size: 3rem;
+}
+
+.birthday-cards .container .contianer-birthday .image-content .content p{
+    color: var(--paragraph-color);
+    font-size: 1.3rem;
+    padding-left: 2.5rem;
+}
 
 
 
@@ -860,6 +982,18 @@ h3 {
         object-fit: cover;
         border-radius: .3rem;
     }
+
+    .birthday-cards .container .contianer-birthday {
+    background-color: var(--header-navigation-top-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 101vh;
+    width: 100%;
+    position: relative;
+    padding: 7rem 0;
+}
 }
 
 @media (max-width:600px) {
@@ -902,7 +1036,20 @@ h3 {
         object-fit: cover;
         border-radius: .3rem;
     }
+
+    .birthday-cards .container .contianer-birthday {
+    background-color: var(--header-navigation-top-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 172vh;
+    width: 100%;
+    position: relative;
+    padding: 7rem 0;
 }
+}
+
 
 @media (max-width:480px) {
     .about-section {
@@ -1007,6 +1154,32 @@ h3 {
         padding-top: 2rem;
         margin-right: 1rem;
     }
+.birthday-cards .container .contianer-birthday {
+    background-color: var(--header-navigation-top-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 172vh;
+    width: 100%;
+    padding: 7rem 0;
+}
 
+
+.birthday-cards .container .contianer-birthday .image-content .image {
+    height: 22vh;
+    width: 21vh;
+    border-radius: 50%;
+    background-color: var(--header-navigation-bottom-color);
+    margin-left: 2rem;
+    margin-top: 2.3rem;
+}
+
+.birthday-cards .container .contianer-birthday .image-content .image img {
+    height: 8rem;
+    width: 8rem;
+    object-fit: contain;
+    margin-top: 2rem;
+}
 
 }
