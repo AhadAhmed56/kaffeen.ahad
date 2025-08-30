@@ -1199,7 +1199,8 @@ h3 {
         height: 8rem;
         width: 8rem;
         object-fit: contain;
-        margin-top: 2rem;
+        margin-top: 3rem;
+        margin-left: 3rem;
     }
 
 }
@@ -1275,17 +1276,17 @@ h3 {
     }
 
     .birthday-cards .container .contianer-birthday .image-content .content p {
-    color: var(--paragraph-color);
-    font-size: 1.3rem;
-    padding-left: 0rem;
-    padding-top: .5rem;
-}
+        color: var(--paragraph-color);
+        font-size: 1.3rem;
+        padding-left: 0rem;
+        padding-top: .5rem;
+    }
 
-.birthday-cards .container .contianer-birthday .image-content .content h3 {
-    color: #fff;
-    margin-right: 2rem;
-    font-size: 2rem;
-}
+    .birthday-cards .container .contianer-birthday .image-content .content h3 {
+        color: #fff;
+        margin-right: 2rem;
+        font-size: 2rem;
+    }
 
     .birthday-cards .container .contianer-birthday .image-content .image {
         height: 22vh;
