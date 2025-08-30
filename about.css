@@ -762,6 +762,36 @@ h3 {
 }
 
 
+/* brand-pics */
+
+.brand-pics {
+    padding: 6rem;
+    background-color: var(--header-navigation-bottom-color);
+}
+
+.brand-pics .container .container-pics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.brand-pics .container .container-pics .pics {
+    height: auto;
+    padding: 0 3rem;
+
+}
+
+.pics img {
+    height: 20vh;
+    width: 25vh;
+    padding-left: 1rem;
+    object-fit: contain;
+    opacity: .5;
+}
+
+
+
 
 
 
@@ -1144,7 +1174,7 @@ h3 {
     }
 
 
-    
+
     .chefs .container .team {
         display: flex;
         justify-content: center;
@@ -1201,6 +1231,18 @@ h3 {
         font-weight: bolder;
     }
 
+    .brand-pics .container .container-pics .pics {
+        height: auto;
+        padding: 0 1rem;
+    }
+
+
+    .pics img {
+        height: 15vh;
+        width: 19vh;
+        padding-left: 1rem;
+        object-fit: contain;
+    }
 }
 
 @media (max-width:567px) {
@@ -1260,6 +1302,22 @@ h3 {
         position: relative;
         padding: 7rem 0;
     }
+
+
+    .brand-pics .container .container-pics .pics {
+        height: auto;
+        padding: 0;
+    }
+
+    .pics img {
+        height: 9vh;
+        width: 16vh;
+        padding-left: 1rem;
+        object-fit: contain;
+        opacity: .5;
+    }
+
+
 }
 
 
@@ -1397,6 +1455,19 @@ h3 {
         object-fit: contain;
         margin-top: 3.5rem;
         margin-left: 3.5rem;
+    }
+
+    .brand-pics .container .container-pics .pics {
+        height: auto;
+        padding: 0;
+    }
+
+    .pics img {
+        height: 9vh;
+        width: 11vh;
+        padding-left: 1rem;
+        object-fit: contain;
+        opacity: .5;
     }
 
 }
