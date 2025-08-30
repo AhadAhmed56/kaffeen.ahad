@@ -384,7 +384,7 @@ h3 {
 }
 
 .about-keffen .container .row-1-2 .row-2 .image img {
-    width: 80vh;
+    width: 73vh;
     height: 130vh;
     padding-bottom: 3rem;
     object-fit: cover;
@@ -568,13 +568,13 @@ h3 {
 
 /* birthday-cards */
 
-.birthday-cards{
-    padding:  8rem 6rem;
+.birthday-cards {
+    padding: 8rem 6rem;
 }
 
 
 
-.birthday-cards .container .contianer-birthday{
+.birthday-cards .container .contianer-birthday {
     background-color: var(--header-navigation-top-color);
     display: flex;
     justify-content: center;
@@ -587,12 +587,13 @@ h3 {
 }
 
 
-.birthday-cards .container .contianer-birthday .image-content{
+.birthday-cards .container .contianer-birthday .image-content {
     width: 38vh;
     height: auto;
     margin-left: 6rem;
 }
-.birthday-cards .container .contianer-birthday .image-content .image{
+
+.birthday-cards .container .contianer-birthday .image-content .image {
     height: 22vh;
     width: 21vh;
     border-radius: 50%;
@@ -601,7 +602,7 @@ h3 {
     margin-top: -3.7rem;
 }
 
-.birthday-cards .container .contianer-birthday .image-content .image img{
+.birthday-cards .container .contianer-birthday .image-content .image img {
     height: 8rem;
     width: 8rem;
     object-fit: contain;
@@ -610,13 +611,13 @@ h3 {
 }
 
 
-.birthday-cards .container .contianer-birthday .image-content .content h3{
+.birthday-cards .container .contianer-birthday .image-content .content h3 {
     color: #fff;
     margin-right: 2rem;
     font-size: 3rem;
 }
 
-.birthday-cards .container .contianer-birthday .image-content .content p{
+.birthday-cards .container .contianer-birthday .image-content .content p {
     color: var(--paragraph-color);
     font-size: 1.3rem;
     padding-left: 2.5rem;
@@ -964,39 +965,49 @@ h3 {
     }
 
     .about-section .content h1 {
-        font-size: 2.4rem;
+        font-size: 4.4rem;
+        position: absolute;
+        left: 11rem;
+        top: -2rem;
     }
 
+
     .about-section .content h5 {
+        position: absolute;
+        top: 5rem;
+        left: 15rem;
         font-size: 1.1rem;
+
     }
+
 
     .about-keffen .container .row-1-2 .row-2 {
         margin-top: 3rem;
+        width: 90rem;
     }
 
     .about-keffen .container .row-1-2 .row-2 .image img {
-        width: 125vh;
-        height: 130vh;
+        width: 158vh;
+        height: 160vh;
         padding-bottom: 3rem;
         object-fit: cover;
         border-radius: .3rem;
     }
 
     .birthday-cards .container .contianer-birthday {
-    background-color: var(--header-navigation-top-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 101vh;
-    width: 100%;
-    position: relative;
-    padding: 7rem 0;
-}
+        background-color: var(--header-navigation-top-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 101vh;
+        width: 100%;
+        position: relative;
+        padding: 7rem 0;
+    }
 }
 
-@media (max-width:600px) {
+@media (max-width:567px) {
     .about-section {
         height: 75vh;
     }
@@ -1014,6 +1025,9 @@ h3 {
         color: #fff;
         margin-bottom: 1rem;
         font-weight: bold;
+        position: absolute;
+        top: -3rem;
+        left: 20rem;
     }
 
     .about-section .content h5 {
@@ -1021,33 +1035,35 @@ h3 {
         color: #fff;
         display: flex;
         position: absolute;
-        top: 100%;
         left: 42%;
         width: 100vh;
     }
 
     .about-keffen .container .row-1-2 .row-2 {
-    margin-top: 3rem;
-}
+        margin-top: 3rem;
+        flex: 1 1 35%;
+
+    }
+
     .about-keffen .container .row-1-2 .row-2 .image img {
-        width: 96vh;
         height: 110vh;
+        width: 100vh;
         padding-bottom: 3rem;
         object-fit: cover;
         border-radius: .3rem;
     }
 
     .birthday-cards .container .contianer-birthday {
-    background-color: var(--header-navigation-top-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 172vh;
-    width: 100%;
-    position: relative;
-    padding: 7rem 0;
-}
+        background-color: var(--header-navigation-top-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 172vh;
+        width: 100%;
+        position: relative;
+        padding: 7rem 0;
+    }
 }
 
 
@@ -1065,10 +1081,13 @@ h3 {
     }
 
     .about-section .content h1 {
-        font-size: 5rem;
+        font-size: 4rem;
         color: #fff;
         margin-bottom: 1rem;
         font-weight: bold;
+        position: absolute;
+        left: 18rem;
+        top: 1rem;
     }
 
     .about-section .content h5 {
@@ -1076,8 +1095,8 @@ h3 {
         color: #fff;
         display: flex;
         position: absolute;
-        top: 100%;
-        left: 42%;
+        top: 8rem;
+        left: 21rem;
         width: 100vh;
     }
 
@@ -1120,8 +1139,8 @@ h3 {
     }
 
     .about-keffen .container .row-1-2 .row-2 .image img {
-        width: 48vh;
-        height:  77vh;
+        width: 79vh;
+        height: 86vh;
         padding-bottom: 3rem;
         object-fit: cover;
         border-radius: .3rem;
@@ -1154,32 +1173,126 @@ h3 {
         padding-top: 2rem;
         margin-right: 1rem;
     }
-.birthday-cards .container .contianer-birthday {
-    background-color: var(--header-navigation-top-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 172vh;
-    width: 100%;
-    padding: 7rem 0;
+
+    .birthday-cards .container .contianer-birthday {
+        background-color: var(--header-navigation-top-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 172vh;
+        width: 100%;
+        padding: 7rem 0;
+    }
+
+
+    .birthday-cards .container .contianer-birthday .image-content .image {
+        height: 22vh;
+        width: 21vh;
+        border-radius: 50%;
+        background-color: var(--header-navigation-bottom-color);
+        margin-left: 2rem;
+        margin-top: 2.3rem;
+    }
+
+    .birthday-cards .container .contianer-birthday .image-content .image img {
+        height: 8rem;
+        width: 8rem;
+        object-fit: contain;
+        margin-top: 2rem;
+    }
+
 }
 
 
-.birthday-cards .container .contianer-birthday .image-content .image {
-    height: 22vh;
-    width: 21vh;
-    border-radius: 50%;
-    background-color: var(--header-navigation-bottom-color);
-    margin-left: 2rem;
-    margin-top: 2.3rem;
+@media (max-width:320px) {
+    .about-keffen .container .row-1-2 .row-1 .main-content h1 {
+        font-size: 2rem;
+        color: #fff;
+        font-family: 'Oswald';
+        padding-bottom: 2rem;
+    }
+
+    .about-keffen .container .row-1-2 .row-1 .main-content p {
+        color: var(--paragraph-color);
+        line-height: 1.5;
+        width: 100%;
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+
+    .image-content-1 .content h3 {
+        font-size: 1.5rem;
+        color: #fff;
+    }
+
+    .image-content-1 .content p {
+        font-size: 1.2rem;
+        color: var(--paragraph-color);
+        width: 100%;
+        line-height: 1.5;
+        padding-top: 1rem;
+    }
+
+    .image-content-1 .image img {
+        width: 7rem;
+        height: 7rem;
+        object-fit: contain;
+        padding-top: 2rem;
+        margin-right: 1rem;
+    }
+
+    .image-content-2 .content h3 {
+        font-size: 1.5rem;
+        color: #fff;
+    }
+
+    .image-content-2 .image img {
+        width: 7rem;
+        height: 7rem;
+        object-fit: contain;
+        padding-top: 2rem;
+        margin-right: 1rem;
+    }
+
+    .image-content-2 .content p {
+        font-size: 1.2rem;
+        color: var(--paragraph-color);
+        width: 100%;
+        line-height: 1.5;
+        padding-top: 1rem;
+    }
+
+    .birthday-cards .container .contianer-birthday {
+        background-color: var(--header-navigation-top-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 194vh;
+        width: 100%;
+        padding: 7rem 0;
+    }
+
+    .birthday-cards .container .contianer-birthday .image-content .content p {
+    color: var(--paragraph-color);
+    font-size: 1.3rem;
+    padding-left: 0rem;
+    padding-top: .5rem;
 }
 
-.birthday-cards .container .contianer-birthday .image-content .image img {
-    height: 8rem;
-    width: 8rem;
-    object-fit: contain;
-    margin-top: 2rem;
+.birthday-cards .container .contianer-birthday .image-content .content h3 {
+    color: #fff;
+    margin-right: 2rem;
+    font-size: 2rem;
 }
 
+    .birthday-cards .container .contianer-birthday .image-content .image {
+        height: 22vh;
+        width: 21vh;
+        border-radius: 50%;
+        background-color: var(--header-navigation-bottom-color);
+        margin-left: 0rem;
+        margin-top: -11.7rem;
+    }
 }
