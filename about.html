@@ -10,99 +10,20 @@
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+<!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
     <link rel="stylesheet" href="about.css">
     <title>keffeen</title>
 </head>
 
 <body>
-<div class="flow">
-    <!-- header start -->
+    <div class="flow">
+        <!-- header start -->
 
 
-    <div class="responsive-header">
-        <div class="container-header">
-            <div class="logo">
-                <a href="#">
-                    <img src="/image/logo.png" alt="">
-                </a>
-            </div>
-            <nav class="header-navigation">
-                <ul class="navigation">
-                    <li>
-                        <a href="index.html" class="active">home</a>
-                    </li>
-                    <li>
-                        <a href="#">menu</a>
-                    </li>
-                    <li>
-                        <a href="about.html">about</a>
-                    </li>
-                    <li class="has-dropdown">
-                        <a href="#">page<i class="fa-solid fa-chevron-right"></i></a>
-                        <ul class="dropdown">
-                            <li>
-                                <a href="#">gallery</a>
-                            </li>
-                            <li>
-                                <a href="#">faqs</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="has-dropdown">
-                        <a href="#">blog<i class="fa-solid fa-chevron-right"></i></a>
-                        <ul class="dropdown">
-                            <li>
-                                <a href="#">blog grid</a>
-                            </li>
-                            <li>
-                                <a href="#">blog single</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">contact</a>
-                    </li>
-
-                    <li><a href="#" class="fas fa-shopping-cart" id="desktop"> </a></li>
-                    <li><a href="#" class="btn" id="desktop">book a table</a></li>
-                </ul>
-
-            </nav>
-
-
-            <i class="fa-solid fa-xmark" id="close"></i>
-
-        </div>
-    </div>
-
-
-    <header>
-        <div class="header-top">
-            <div class="container-header  ">
-                <div class="opening-kaffen  same-css">
-                    <p><span><i class="fa-solid fa-clock"></i>OPENING HOURS :</span> 08:00 AM - 09:00 PM</p>
-                </div>
-                <div class="socail-icons">
-                    <ul class="socail">
-                        <li>
-                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"> <i class="fa-brands fa-facebook"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="location-keffen same-css">
-                    <p><span><i class="fa-solid fa-location-dot"></i> lOCATION : </span>55 MAIN STREET, NEW YORK</p>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="header-bottom">
+        <div class="responsive-header">
             <div class="container-header">
                 <div class="logo">
                     <a href="#">
@@ -121,7 +42,7 @@
                             <a href="about.html">about</a>
                         </li>
                         <li class="has-dropdown">
-                            <a href="#">page</a>
+                            <a href="#">page<i class="fa-solid fa-chevron-right"></i></a>
                             <ul class="dropdown">
                                 <li>
                                     <a href="#">gallery</a>
@@ -132,7 +53,7 @@
                             </ul>
                         </li>
                         <li class="has-dropdown">
-                            <a href="#">blog</a>
+                            <a href="#">blog<i class="fa-solid fa-chevron-right"></i></a>
                             <ul class="dropdown">
                                 <li>
                                     <a href="#">blog grid</a>
@@ -153,86 +74,170 @@
                 </nav>
 
 
-                <div class="icons-1">
-                    <a href="#" class="btn" id="none">book a table</a>
-                    <i class="fa-solid fa-bars" id="menu-bars"></i>
-                </div>
+                <i class="fa-solid fa-xmark" id="close"></i>
+
             </div>
         </div>
-    </header>
 
-    <!-- header end -->
 
-    <!-- section start -->
+        <header>
+            <div class="header-top">
+                <div class="container-header  ">
+                    <div class="opening-kaffen  same-css">
+                        <p><span><i class="fa-solid fa-clock"></i>OPENING HOURS :</span> 08:00 AM - 09:00 PM</p>
+                    </div>
+                    <div class="socail-icons">
+                        <ul class="socail">
+                            <li>
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="location-keffen same-css">
+                        <p><span><i class="fa-solid fa-location-dot"></i> lOCATION : </span>55 MAIN STREET, NEW YORK</p>
+                    </div>
+                </div>
 
-    <section class="about-section">
-
-        <div class="container">
-
-            <div class="content">
-                <h1>About us</h1>
-                <h5>
-                    <a href="index.html">Home</a>
-                    <span>/</span>
-                    about
-                </h5>
             </div>
-        </div>
-    </section>
-    <!-- secrtion end -->
 
-    <!-- section start -->
+            <div class="header-bottom">
+                <div class="container-header">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="/image/logo.png" alt="">
+                        </a>
+                    </div>
+                    <nav class="header-navigation">
+                        <ul class="navigation">
+                            <li>
+                                <a href="index.html">home</a>
+                            </li>
+                            <li>
+                                <a href="#">menu</a>
+                            </li>
+                            <li>
+                                <a href="about.html">about</a>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="#">page</a>
+                                <ul class="dropdown">
+                                    <li>
+                                        <a href="#">gallery</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">faqs</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="#">blog</a>
+                                <ul class="dropdown">
+                                    <li>
+                                        <a href="#">blog grid</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">blog single</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">contact</a>
+                            </li>
 
-    <section class="about-keffen">
-        <div class="container">
-<div class="row-1-2">
-            <div class="row-1">
-                <div class="main-content">
-                    <h4>About Kaffen
-                    </h4>
-                    <h1>New London Coffee Founded For Extraordinary Test</h1>
-                    <p>Sed ut perspiciatis unde omnis iste natus error voluptate accusantium doloremque laudantium,
-                        totam rem aperiam eaque ipsa quae abillo inventore veritatis</p>
+                            <li><a href="#" class="fas fa-shopping-cart" id="desktop"> </a></li>
+                            <li><a href="#" class="btn" id="desktop">book a table</a></li>
+                        </ul>
+
+                    </nav>
+
+
+                    <div class="icons-1">
+                        <a href="#" class="btn" id="none">book a table</a>
+                        <i class="fa-solid fa-bars" id="menu-bars"></i>
+                    </div>
                 </div>
-
-                <div class="image-content-1">
-                    <div class="image">
-                        <img src="/image/abt-i.png" alt="">
-                    </div>
-
-                    <div class="content">
-                        <h3>natural coffeee beans</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error voluptate accusantium doloremque</p>
-                    </div>
-
-                </div>
-                <div class="image-content-2">
-                    <div class="image">
-                        <img src="/image/abt-2i.png" alt="">
-                    </div>
-
-                    <div class="content">
-                        <h3>
-                            100% ISO Certification</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error voluptate accusantium doloremque</p>
-                    </div>
-
-                </div>
-
-                <button  class="btn-about"><a href="#">our menu</a></button>
             </div>
-            <div class="row-2">
-                <div class="image">
-                    <img src="/image/a-2.jpg" alt="">
+        </header>
 
+        <!-- header end -->
+
+        <!-- section start -->
+
+        <section class="about-section">
+
+            <div class="container">
+
+                <div class="content">
+                    <h1>About us</h1>
+                    <h5>
+                        <a href="index.html">Home</a>
+                        <span>/</span>
+                        about
+                    </h5>
                 </div>
             </div>
-        </div>
-        </div>
-    </section>
-    <!-- section end -->
+        </section>
+        <!-- secrtion end -->
 
-          <!-- section start -->
+        <!-- section start -->
+
+        <section class="about-keffen">
+            <div class="container">
+                <div class="row-1-2">
+                    <div class="row-1">
+                        <div class="main-content">
+                            <h4>About Kaffen
+                            </h4>
+                            <h1>New London Coffee Founded For Extraordinary Test</h1>
+                            <p>Sed ut perspiciatis unde omnis iste natus error voluptate accusantium doloremque
+                                laudantium,
+                                totam rem aperiam eaque ipsa quae abillo inventore veritatis</p>
+                        </div>
+
+                        <div class="image-content-1">
+                            <div class="image">
+                                <img src="/image/abt-i.png" alt="">
+                            </div>
+
+                            <div class="content">
+                                <h3>natural coffeee beans</h3>
+                                <p>Sed ut perspiciatis unde omnis iste natus error voluptate accusantium doloremque</p>
+                            </div>
+
+                        </div>
+                        <div class="image-content-2">
+                            <div class="image">
+                                <img src="/image/abt-2i.png" alt="">
+                            </div>
+
+                            <div class="content">
+                                <h3>
+                                    100% ISO Certification</h3>
+                                <p>Sed ut perspiciatis unde omnis iste natus error voluptate accusantium doloremque</p>
+                            </div>
+
+                        </div>
+
+                        <button class="btn-about"><a href="#">our menu</a></button>
+                    </div>
+                    <div class="row-2">
+                        <div class="image">
+                            <img src="/image/a-2.jpg" alt="">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section end -->
+
+        <!-- section start -->
         <section class="bg-video">
             <div class="video-container">
                 <div id="player"></div>
@@ -244,58 +249,58 @@
         <!-- section end -->
 
         <!-- section start -->
-         <section class="birthday-cards">
+        <section class="birthday-cards">
 
             <div class="container">
                 <div class="contianer-birthday">
-                <div class="image-content">
-                <div class="image">
-                    <img src="/image/service_icon1.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>Birthday Cakes</h3>
-                    <p>Sed ut perspiciatis unde</p>
-                </div>
-                </div>
+                    <div class="image-content">
+                        <div class="image">
+                            <img src="/image/service_icon1.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Birthday Cakes</h3>
+                            <p>Sed ut perspiciatis unde</p>
+                        </div>
+                    </div>
 
-                 <div class="image-content">
-                <div class="image">
-                    <img src="/image/service_icon2.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>Birthday Cakes</h3>
-                    <p>Sed ut perspiciatis unde</p>
-                </div>
-                </div>
+                    <div class="image-content">
+                        <div class="image">
+                            <img src="/image/service_icon2.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Birthday Cakes</h3>
+                            <p>Sed ut perspiciatis unde</p>
+                        </div>
+                    </div>
 
-                 <div class="image-content">
-                <div class="image">
-                    <img src="/image/service_icon3.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>Birthday Cakes</h3>
-                    <p>Sed ut perspiciatis unde</p>
-                </div>
-                </div>
+                    <div class="image-content">
+                        <div class="image">
+                            <img src="/image/service_icon3.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Birthday Cakes</h3>
+                            <p>Sed ut perspiciatis unde</p>
+                        </div>
+                    </div>
 
-                 <div class="image-content">
-                <div class="image">
-                    <img src="/image/service_icon4.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>Birthday Cakes</h3>
-                    <p>Sed ut perspiciatis unde</p>
-                </div>
-                </div>
+                    <div class="image-content">
+                        <div class="image">
+                            <img src="/image/service_icon4.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Birthday Cakes</h3>
+                            <p>Sed ut perspiciatis unde</p>
+                        </div>
+                    </div>
 
                 </div>
 
             </div>
-         </section>
-         <!-- section end -->
+        </section>
+        <!-- section end -->
 
 
-             <!-- section start -->
+        <!-- section start -->
 
         <section class="chefs">
             <div class="container">
@@ -471,7 +476,7 @@
         </section>
         <!-- section end -->
 
-            <!-- section start -->
+        <!-- section start -->
 
         <section class="brand-pics">
             <div class="container">
@@ -500,13 +505,168 @@
         </section>
         <!-- section end -->
 
-             <!-- section start -->
+        <!-- section start -->
+        <!-- <section class="about-client">
+            <div class="container">
+                <h2> CUSTOMER FEEDBACK</h2>
+                <h1>What Our Clients Say</h1>
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+
+                        <div class=" about-container">
+
+                            <div class="container-keffen">
+
+                                <div class="clinet-inf0 swiper-slide">
+                                    <div class="image">
+                                        <img src="/image/rev.jpg" alt="">
+                                    </div>
+
+                                    <div class="content-client">
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+
+                                        <p> Sed ut perspiciatis unde omnis natus error luptatem accusantium doloremque
+                                            laudantium totam
+                                            remriam eaque quae abillo </p>
+                                        <h5>James M. London</h5>
+                                        <h6>Lawyer</h6>
+                                    </div>
+                                </div>
+
+                                <div class="clinet-inf0 swiper-slide">
+                                    <div class="image">
+                                        <img src="/image/rev.jpg" alt="">
+                                    </div>
+
+                                    <div class="content-client">
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+
+                                        <p> Sed ut perspiciatis unde omnis natus error luptatem accusantium doloremque
+                                            laudantium totam
+                                            remriam eaque quae abillo </p>
+                                        <h5>James M. London</h5>
+                                        <h6>Lawyer</h6>
+                                    </div>
+                                </div>
+
+
+                                <div class="clinet-inf0 swiper-slide">
+                                    <div class="image">
+                                        <img src="/image/rev.jpg" alt="">
+                                    </div>
+
+                                    <div class="content-client">
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+
+                                        <p> Sed ut perspiciatis unde omnis natus error luptatem accusantium doloremque
+                                            laudantium totam
+                                            remriam eaque quae abillo </p>
+                                        <h5>James M. London</h5>
+                                        <h6>Lawyer</h6>
+                                    </div>
+                                </div>
+
+                                <div class="clinet-inf0 swiper-slide">
+                                    <div class="image">
+                                        <img src="/image/rev.jpg" alt="">
+                                    </div>
+
+                                    <div class="content-client">
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+
+                                        <p> Sed ut perspiciatis unde omnis natus error luptatem accusantium doloremque
+                                            laudantium totam
+                                            remriam eaque quae abillo </p>
+                                        <h5>James M. London</h5>
+                                        <h6>Lawyer</h6>
+                                    </div>
+                                </div>
+
+                                <div class="clinet-inf0 swiper-slide">
+                                    <div class="image">
+                                        <img src="/image/rev.jpg" alt="">
+                                    </div>
+
+                                    <div class="content-client">
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+
+                                        <p> Sed ut perspiciatis unde omnis natus error luptatem accusantium doloremque
+                                            laudantium totam
+                                            remriam eaque quae abillo </p>
+                                        <h5>James M. London</h5>
+                                        <h6>Lawyer</h6>
+                                    </div>
+                                </div>
+                                <div class="clinet-inf0 swiper-slide">
+                                    <div class="image">
+                                        <img src="/image/rev.jpg" alt="">
+                                    </div>
+
+                                    <div class="content-client">
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+
+                                        <p> Sed ut perspiciatis unde omnis natus error luptatem accusantium doloremque
+                                            laudantium totam
+                                            remriam eaque quae abillo </p>
+                                        <h5>James M. London</h5>
+                                        <h6>Lawyer</h6>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section> -->
+        <!-- section END -->
+
+              <!-- section start -->
         <section class="slider-client">
 
             <div class="container">
-                <h2 >CUSTOMER FEEDBACK</h2>
-                <h1 >What Our Clients Say</h1>
-                <div class=" swiper-container client-container"  >
+                <h2 data-aos="fade-down">CUSTOMER FEEDBACK</h2>
+                <h1 data-aos="fade-down">What Our Clients Say</h1>
+                <div class=" swiper-container client-container"  data-aos="fade-down">
 
                     <div class=" swiper-wrapper wrapper" >
 
@@ -617,6 +777,179 @@
         </section>
         <!-- section END -->
 
+        
+        <!-- section start -->
+        <section class="end-image-slider">
+            <div class="container">
+                <div class="container-end">
+                    <div class="image">
+                        <img src="/image/inst1.jpeg" alt="">
+                        <div class="image-icons">
+                            <div class="icons">
+                                <a href="#">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="/image/inst6.jpeg" alt="">
+                        <div class="image-icons">
+                            <div class="icons">
+                                <a href="#">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="image">
+                        <img src="/image/inst2.jpeg" alt="">
+                        <div class="image-icons">
+                            <div class="icons">
+                                <a href="#">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="image">
+                        <img src="/image/inst3.jpeg" alt="">
+                        <div class="image-icons">
+                            <div class="icons">
+                                <a href="#">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="image">
+                        <img src="/image/inst4.jpeg" alt="">
+                        <div class="image-icons">
+                            <div class="icons">
+                                <a href="#">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section end -->
+    <!-- section start -->
+        <div class="footer">
+
+            <div class="container">
+
+                <div class="for-1">
+                    <div class="container-for-1">
+                        <img src="/image/logo.png" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut elit tellus, luctus nec.</p>
+                        <div class="fo-socail-icons">
+
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="for-2">
+                    <div class="container-for-2">
+                        <h1>working hours</h1>
+                        <div class="dates-fot">
+                            <ul>
+                                <li>
+                                    <h6>
+                                        <i class="fas fa-circle"></i><span>Sunday-Thursday </span>
+                                    </h6>
+                                    <p>08:00 am - 09:00pm</p>
+                                </li>
+                                <li>
+                                    <h6>
+                                        <i class="fas fa-circle"></i>only friday
+                                    </h6>
+                                    <p>08:00 am - 09:00pm</p>
+                                </li>
+                                <li>
+                                    <h6>
+                                        <i class="fas fa-circle"></i>saturday
+                                    </h6>
+                                    <p>closed</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="for-3">
+
+                    <div class="container-for-3">
+                        <h1>contact</h1>
+                        <div class="footer-3">
+                            <ul>
+                                <li>
+                                    <h6>
+                                        <i class="fas fa-map-marker-alt"></i>Location :
+                                    </h6>
+                                    <p>
+                                        <a href="">55 Main Street, New York
+                                    </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <h6>
+                                        <i class="fas fa-envelope"></i>email address :
+                                    </h6>
+                                    <p>
+                                        <a href="#">kaffendev@gmail.com</a>
+                                    </p>
+                                </li>
+
+                                <li>
+                                    <h6>
+                                        <i class="fas fa-phone"></i>Phone Number :
+                                    </h6>
+                                    <p>
+                                        <a href="#">+012 (345) 678 99</a>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-end">
+                <div class="footer">
+                    <p>Copyright © 2022 Kaffen. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- section end -->
 
     </div>
 
@@ -639,6 +972,12 @@
             once: false,       // animation runs only once
         });
     </script>
+
+    
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  
 
     <script src="kaffen.js"></script>
 </body>

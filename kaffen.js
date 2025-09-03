@@ -86,4 +86,3 @@ function playVideo() {
     player.playVideo();
   }
 }
-
