@@ -1659,6 +1659,32 @@ h3 {
         padding-left: 1rem;
         object-fit: contain;
     }
+
+     .footer {
+        padding: 5rem 2rem;
+    }
+
+    .footer .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        /* ✅ responsive ke liye wrap */
+        flex-direction: column;
+        gap: 3rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .footer-end .footer {
+        padding: 0rem;
+    }
+
+    .footer-end .footer p {
+        font-size: 1.2rem;
+        margin-top: 2rem;
+    }
+
 }
 
 @media (max-width:567px) {
